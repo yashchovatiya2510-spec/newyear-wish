@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year My Love ❤️</title>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("u2yNorOguuXY2xuQn"); // 🔑 REPLACE
+})();
+</script>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',cursive;
+}
+
+body{overflow:hidden;}
+
+.page{
+width:100vw;
+height:100vh;
+display:none;
+padding:50px;
+text-align:center;
+animation:fade 1.2s ease;
+color:white;
+}
+.page.active{display:block;}
+
+@keyframes fade{
+from{opacity:0;transform:scale(0.9);}
+to{opacity:1;transform:scale(1);}
+}
+
+.btn{
+padding:12px 30px;
+border:none;
+border-radius:40px;
+background:#ff3b6f;
+color:white;
+font-size:1rem;
+cursor:pointer;
+margin:10px;
+transition:0.3s;
+}
+.btn:hover{transform:scale(1.1);}
+
+textarea{
+width:80%;
+height:90px;
+border-radius:20px;
+border:none;
+padding:15px;
+font-size:1rem;
+margin:15px auto;
+display:block;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:25px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:20px;
+animation:float 4s infinite;
+}
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+.couple{
+font-size:6rem;
+animation:float 3s infinite;
+}
+
+.nav{
+position:absolute;
+bottom:20px;
+width:100%;
+}
+
+/* BACKGROUNDS */
+.bg1{background:linear-gradient(135deg,#ff758c,#ff7eb3);}
+.bg2{background:linear-gradient(135deg,#f7971e,#ffd200);}
+.bg3{background:linear-gradient(135deg,#667eea,#764ba2);}
+.bg4{background:radial-gradient(circle,#ff9a9e,#fad0c4);}
+.bg5{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);}
+.bg6{background:linear-gradient(135deg,#43cea2,#185a9d);}
+.bg7{background:linear-gradient(135deg,#ff512f,#dd2476);}
+.bg8{background:linear-gradient(135deg,#1d2671,#c33764);}
+
+/* ===== PAGE 6 DIARY STYLE ===== */
+.diary-page{
+position:relative;
+overflow:hidden;
+}
+
+.diary-card{
+background:#fff8ee;
+color:#4a3a2a;
+max-width:750px;
+margin:auto;
+padding:45px;
+border-radius:25px;
+box-shadow:0 20px 50px rgba(0,0,0,0.35);
+animation:fade 1.4s ease;
+position:relative;
+}
+
+/* Tape */
+.diary-card::before{
+content:"";
+position:absolute;
+top:-18px;
+left:40%;
+width:140px;
+height:32px;
+background:rgba(255,220,150,0.8);
+transform:rotate(-6deg);
+border-radius:6px;
+}
+
+.diary-heading{
+font-size:2.8rem;
+margin-bottom:20px;
+font-family:cursive;
+}
+
+.diary-line{
+font-size:1.2rem;
+line-height:1.9;
+margin-bottom:18px;
+}
+
+.year-highlight{
+color:#ff4d6d;
+font-size:1.5rem;
+font-weight:bold;
+}
+
+.diary-sign{
+text-align:right;
+font-size:1.3rem;
+margin-top:30px;
+}
+
+/* Stickers */
+.sticker{
+position:absolute;
+font-size:2.6rem;
+animation:float 4s infinite;
+}
+.s1{top:8%;left:6%;}
+.s2{top:10%;right:8%;animation-delay:1s;}
+.s3{bottom:18%;left:7%;animation-delay:2s;}
+.s4{bottom:14%;right:6%;animation-delay:3s;}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page bg1 active">
+<h1>🎉 You Did It, My Love 💖</h1>
+<p>You walked through 2025 with strength, courage and patience ✨</p>
+<p>I saw you grow and I’m so proud of you ❤️</p>
+<div class="nav">
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page bg2">
+<h1>💌 Speak From Your Heart</h1>
+<p>Things you hate in me 😅</p>
+<textarea></textarea>
+<p>Anything you want to say to me ❤️</p>
+<textarea></textarea>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page bg3">
+<h1>📸 Our Beautiful Memories</h1>
+<p>Every picture holds a moment of us 💕</p>
+<div class="gallery">
+<img src="https://picsum.photos/300/300?1">
+<img src="https://picsum.photos/300/300?2">
+<img src="https://picsum.photos/300/300?3">
+<img src="https://picsum.photos/300/300?4">
+<img src="https://picsum.photos/300/300?5">
+<img src="https://picsum.photos/300/300?6">
+</div>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page bg4">
+<h1>💑 Just You & Me</h1>
+<div class="couple">👩‍❤️‍👨</div>
+<p>Two hearts that chose each other 💞</p>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page bg5">
+<h1>✨ Welcome 2026 ✨</h1>
+<p>New year, new hopes, same love ❤️</p>
+<img src="https://picsum.photos/420/280" style="border-radius:20px;margin-top:15px;">
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 6 (UPDATED DIARY PAGE) -->
+<div class="page bg6 diary-page">
+
+<div class="sticker s1">💖</div>
+<div class="sticker s2">✨</div>
+<div class="sticker s3">🌸</div>
+<div class="sticker s4">💫</div>
+
+<div class="diary-card">
+<h1 class="diary-heading">🌸 My Wishes for Us in 2026 🌸</h1>
+
+<p class="diary-line">
+Welcome to <span class="year-highlight">2026</span>, my love ❤️  
+A year I wish to spend holding your hand,
+choosing you every single day.
+</p>
+
+<p class="diary-line">
+May this year bring us  
+🌿 peace in chaos,  
+🌙 calm after long days,  
+💬 understanding in silence  
+and 💞 a love that feels like home.
+</p>
+
+<p class="diary-line">
+If days get hard, remember —  
+you never walk alone.  
+I am always beside you 🫂
+</p>
+
+<p class="diary-line">
+In 2026, I wish for us:  
+✨ more laughter,  
+✨ fewer worries,  
+✨ longer hugs,  
+✨ endless togetherness.
+</p>
+
+<p class="diary-sign">
+Forever yours,<br>❤️ Me
+</p>
+</div>
+
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page bg7">
+<h1>💖 Tell Me This</h1>
+<p>What does our love mean to you  
+and how do you feel with me? ❤️</p>
+<textarea></textarea>
+<button class="btn" onclick="sendEmail()">Send My Answers 💌</button>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page bg8">
+<h1>🤍 we are forever together my cute diyuuu</h1>
+<div class="couple">💞✨💞</div>
+<p>No matter the year, I choose you. Always ❤️
+  plz believe in me i love youuuuuuuuuuu sooooo much. i want only you trust me i will handlie it.
+</p>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+</div>
+</div>
+
+<script>
+let current=0;
+const pages=document.querySelectorAll('.page');
+function showPage(i){
+pages.forEach(p=>p.classList.remove('active'));
+pages[i].classList.add('active');
+}
+function nextPage(){if(current<pages.length-1){current++;showPage(current);}}
+function prevPage(){if(current>0){current--;showPage(current);}}
+function sendEmail(){
+emailjs.send(
+"service_i6209fq",   // 🔑 REPLACE
+"template_qcc1y0a",  // 🔑 REPLACE
+{
+hate_me:document.getElementById("hateMe").value,
+say_to_me:document.getElementById("sayToMe").value,
+love_feeling:document.getElementById("loveFeeling").value
+}
+).then(
+()=>alert("Your answers were sent with love 💖"),
+()=>alert("Failed to send answers 😢")
+);
+}
+</script>
+
+</body>
+</html>
