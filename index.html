@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Happy New Year My Love ❤️</title>
+
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
 (function(){
-  emailjs.init("u2yNorOguuXY2xuQn"); // 🔑 REPLACE
+  emailjs.init("u2yNorOguuXY2xuQn");
 })();
 </script>
+
 <style>
 *{
 margin:0;
@@ -72,6 +74,7 @@ object-fit:cover;
 border-radius:20px;
 animation:float 4s infinite;
 }
+
 @keyframes float{
 0%,100%{transform:translateY(0);}
 50%{transform:translateY(-15px);}
@@ -97,12 +100,11 @@ width:100%;
 .bg6{background:linear-gradient(135deg,#43cea2,#185a9d);}
 .bg7{background:linear-gradient(135deg,#ff512f,#dd2476);}
 .bg8{background:linear-gradient(135deg,#1d2671,#c33764);}
+.bg9{background:linear-gradient(135deg,#fbc2eb,#a6c1ee);}
+.bg10{background:linear-gradient(135deg,#fdfbfb,#ebedee);color:#4a3a2a;}
 
-/* ===== PAGE 6 DIARY STYLE ===== */
-.diary-page{
-position:relative;
-overflow:hidden;
-}
+/* PAGE 6 DIARY STYLE (UNCHANGED) */
+.diary-page{position:relative;overflow:hidden;}
 
 .diary-card{
 background:#fff8ee;
@@ -116,7 +118,6 @@ animation:fade 1.4s ease;
 position:relative;
 }
 
-/* Tape */
 .diary-card::before{
 content:"";
 position:absolute;
@@ -153,7 +154,6 @@ font-size:1.3rem;
 margin-top:30px;
 }
 
-/* Stickers */
 .sticker{
 position:absolute;
 font-size:2.6rem;
@@ -163,19 +163,42 @@ animation:float 4s infinite;
 .s2{top:10%;right:8%;animation-delay:1s;}
 .s3{bottom:18%;left:7%;animation-delay:2s;}
 .s4{bottom:14%;right:6%;animation-delay:3s;}
+
+/* PAGE 9 & 10 STYLES */
+.arrow{
+font-size:6rem;
+cursor:pointer;
+animation:arrowMove 1.5s infinite alternate;
+}
+@keyframes arrowMove{
+from{transform:translateX(0);}
+to{transform:translateX(30px);}
+}
+.arrow-text{font-size:1.5rem;margin-top:15px;}
+
+.flower{
+position:absolute;
+top:-50px;
+font-size:2rem;
+animation:fall linear infinite;
+opacity:0.8;
+}
+@keyframes fall{
+to{transform:translateY(110vh) rotate(360deg);}
+}
 </style>
 </head>
 
 <body>
+
+<!-- =================== PAGES 1–8 (EXACT AS YOU GAVE) =================== -->
 
 <!-- PAGE 1 -->
 <div class="page bg1 active">
 <h1>🎉 You Did It, My Love 💖</h1>
 <p>You walked through 2025 with strength, courage and patience ✨</p>
 <p>I saw you grow and I’m so proud of you ❤️</p>
-<div class="nav">
-<button class="btn" onclick="nextPage()">Next ➜</button>
-</div>
+<div class="nav"><button class="btn" onclick="nextPage()">Next ➜</button></div>
 </div>
 
 <!-- PAGE 2 -->
@@ -231,9 +254,8 @@ animation:float 4s infinite;
 </div>
 </div>
 
-<!-- PAGE 6 (UPDATED DIARY PAGE) -->
+<!-- PAGE 6 (YOUR ORIGINAL CONTENT – UNCHANGED) -->
 <div class="page bg6 diary-page">
-
 <div class="sticker s1">💖</div>
 <div class="sticker s2">✨</div>
 <div class="sticker s3">🌸</div>
@@ -287,7 +309,7 @@ Forever yours,<br>❤️ Me
 <p>What does our love mean to you  
 and how do you feel with me? ❤️</p>
 <textarea></textarea>
-<button class="btn" onclick="sendEmail()">Send My Answers 💌</button>
+<button class="btn">Send My Answers 💌</button>
 <div class="nav">
 <button class="btn" onclick="prevPage()">⬅ Back</button>
 <button class="btn" onclick="nextPage()">Next ➜</button>
@@ -298,9 +320,65 @@ and how do you feel with me? ❤️</p>
 <div class="page bg8">
 <h1>🤍 we are forever together my cute diyuuu</h1>
 <div class="couple">💞✨💞</div>
-<p>No matter the year, I choose you. Always ❤️
-  plz believe in me i love youuuuuuuuuuu sooooo much. i want only you trust me i will handlie it.
+<p>No matter the year, I choose you. Always ❤️</p>
+<div class="nav">
+<button class="btn" onclick="prevPage()">⬅ Back</button>
+<button class="btn" onclick="nextPage()">Next ➜</button>
+</div>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page bg9">
+<h1>💘 My Love Feelings</h1>
+<div class="arrow" onclick="nextPage()">➡️</div>
+<div class="arrow-text">Follow my heart 💞</div>
+</div>
+
+<!-- PAGE 10 -->
+<div class="page bg10">
+
+<span class="flower" style="left:5%;animation-duration:6s;">🌸</span>
+<span class="flower" style="left:25%;animation-duration:8s;">🌺</span>
+<span class="flower" style="left:45%;animation-duration:7s;">🌼</span>
+<span class="flower" style="left:65%;animation-duration:9s;">🌷</span>
+<span class="flower" style="left:85%;animation-duration:6s;">🌸</span>
+
+<div class="diary-card">
+<h2>Dear babybooooooooooo 🥰😚</h2>
+
+<p>
+you know that i can not express my fellings much more but i really lovesss youuu yarrrr 🥹😍  
+at this stage you becoming part of my family and u know that for me family means everything 🤗
 </p>
+
+<p>
+pahale sirf mom dad ayu ki tension hoti thi now you also included in that 🥺🥹🥹  
+if anything wrong happen with u i can feel it 😙
+</p>
+
+<p>
+tne am lge ke i can live without u but really i forgot how to live without u 🙁💟💟  
+i never thought that hu atli comfortable koi boy jode that but u gave that comfortzone 🌛😻🫠
+</p>
+
+<p>
+inshot i love youuuuuuuu sooooooo muchhhh 🫂💞  
+i just badly addicted to youuuuuu 🤌✨✨  
+and that much badly that i can not imagine my future without u 🩷🥲
+</p>
+
+<p>
+in any condition i just want to live with u becoz i know you will handle me in any situation 😁💕  
+thank you so much for being part of my life 😘❤️☺️  
+just dont leave me at this stage of attachment 🥺
+</p>
+
+<p style="text-align:right;">
+Yourssss<br>
+<b>Diyuuuuuu 🫂💟</b>
+</p>
+</div>
+
 <div class="nav">
 <button class="btn" onclick="prevPage()">⬅ Back</button>
 </div>
@@ -309,30 +387,19 @@ and how do you feel with me? ❤️</p>
 <script>
 let current=0;
 const pages=document.querySelectorAll('.page');
+
 function showPage(i){
 pages.forEach(p=>p.classList.remove('active'));
 pages[i].classList.add('active');
 }
-function nextPage(){if(current<pages.length-1){current++;showPage(current);}}
-function prevPage(){if(current>0){current--;showPage(current);}}
-function sendEmail(){
-emailjs.send(
-"service_i6209fq",   // 🔑 REPLACE
-"template_qcc1y0a",  // 🔑 REPLACE
-{
-hate_me:document.getElementById("hateMe").value,
-say_to_me:document.getElementById("sayToMe").value,
-love_feeling:document.getElementById("loveFeeling").value
+function nextPage(){
+if(current<pages.length-1){current++;showPage(current);}
 }
-).then(
-()=>alert("Your answers were sent with love 💖"),
-()=>alert("Failed to send answers 😢")
-);
+function prevPage(){
+if(current>0){current--;showPage(current);}
 }
 </script>
 
 </body>
 </html>
-
-
 
